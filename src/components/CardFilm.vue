@@ -19,7 +19,7 @@
         <div class="card-body d-flex flex-column">
             <h5 class="card-title">Title: {{objfilm.title}}</h5>
             <p class="card-text">Original title: {{objfilm.original_title}}</p>
-            <country-flag :country='objfilm.original_language' size='small' class="mt-auto"/>
+            <country-flag :country='objfilm.original_language' size='normal' class="mt-auto"/>
             <p class="card-text pt-2">Vote: {{objfilm.vote_average}}</p>
         </div>
     </div>
