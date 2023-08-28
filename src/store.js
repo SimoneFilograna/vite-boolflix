@@ -16,6 +16,7 @@ export function searchMov(){
             query: store.inputText
         }
     }).then((response)=>{
-        console.log(response.data.results)
+        store.movResult = response.data.results
+        console.log(store.movResult)
     })
 }

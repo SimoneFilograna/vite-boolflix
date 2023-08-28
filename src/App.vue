@@ -1,13 +1,13 @@
 <script >
   import TheHeader from "../src/components/TheHeader.vue";
-  import TheMain from "../src/components/TheMain.vue";
   import TheFooter from "./components/TheFooter.vue";
+  import FilmContainer from "./components/FilmContainer.vue";
 
   export default{
     components:{
       TheHeader,
-      TheMain,
-      TheFooter
+      TheFooter,
+      FilmContainer
     },
   }
 </script>
@@ -16,7 +16,11 @@
 
   <TheHeader></TheHeader>
 
-  <main></main>
+  <main>
+    <div class="container">
+      <FilmContainer></FilmContainer>
+    </div>
+  </main>
 
   <TheFooter></TheFooter>
 </template>
