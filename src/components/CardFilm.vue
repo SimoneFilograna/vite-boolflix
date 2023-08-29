@@ -1,6 +1,7 @@
 <script>
     import { computed } from 'vue';     
     import LangFlag from "vue-lang-code-flags"
+    
     export default{
         props:{
             objfilm: {
