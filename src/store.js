@@ -23,3 +23,16 @@ export function searchMov(){
 }
 
 
+export function startFill(){
+    let url= "https://api.themoviedb.org/3/discover/movie";
+
+    axios.get(url, {
+        params: {
+            api_key: '7df8a69cc24027278465c7a1322a8642',
+        }
+    }).then((response)=>{
+        store.movResult = response.data.results
+        console.log(store.movResult)
+    });
+}
+

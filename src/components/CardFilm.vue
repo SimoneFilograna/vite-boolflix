@@ -27,7 +27,7 @@
         <div class="card-body d-flex flex-column">
             <h5 class="card-title">Title: {{objfilm.title ?? objfilm.name }}</h5>
             <p class="card-text">Original Title: {{objfilm.original_title ?? objfilm.original_name}}</p>
-            <div class="mt-auto d-flex align-items-center gap-2">
+            <div class="mt-auto d-flex align-items-center justify-content-center gap-2">
                 <span>Language: </span>
                 <lang-flag :iso="objfilm.original_language"/>
             </div>

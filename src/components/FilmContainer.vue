@@ -1,6 +1,6 @@
 <script>
     import CardFilm from './CardFilm.vue';
-    import {store} from '../store';
+    import {store, startFill} from '../store';
 
     export default{ 
         components: {
@@ -10,6 +10,9 @@
             return{
                 store
             }
+        },
+        mounted(){
+            startFill()
         }
     }
 </script>
