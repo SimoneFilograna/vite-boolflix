@@ -21,7 +21,7 @@
             </div>
             
             <div class="input-group">
-                <input class="p-2" type="search" placeholder="Search your film" v-model="store.inputText">
+                <input class="p-2 form-control" type="search" placeholder="Search your film" v-model="store.inputText">
                 <button class="btn btn-outline-light" type="submit" @click="searchMov()">Cerca</button>
             </div>           
         </div>
@@ -30,6 +30,6 @@
 
 <style lang="scss" scoped>
     .input-group {
-        width: 30%;
+        width: 20%;
     }
 </style>
