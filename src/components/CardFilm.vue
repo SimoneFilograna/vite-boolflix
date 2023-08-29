@@ -22,16 +22,32 @@
 </script>
 
 <template>
-    <div class="card h-100">
+    <div class="card h-100 position-relavite">
         <img :src="`https://image.tmdb.org/t/p/w342/${objfilm.poster_path}`" class="card-img-top" alt="">
         <div class="card-body d-flex flex-column">
             <h5 class="card-title">Title: {{objfilm.title ?? objfilm.name }}</h5>
-            <p class="card-text">Original title: {{objfilm.original_title ?? objfilm.original_name}}</p>
-            <lang-flag :iso="objfilm.original_language" class="mt-auto"/>
+            <p class="card-text">Original Title: {{objfilm.original_title ?? objfilm.original_name}}</p>
+            <div class="mt-auto d-flex align-items-center gap-2">
+                <span>Language: </span>
+                <lang-flag :iso="objfilm.original_language"/>
+            </div>
             <p class="card-text pt-2">Vote: {{ voteConvert }}</p>
         </div>
     </div>
 </template>
 
 <style lang="scss" scoped>
+    .card-body{
+        text-align: center;
+        opacity: 0;
+        padding: 3.5rem;
+        color: rgb(255, 255, 255);
+        position: absolute;
+        inset: 0;
+    &:hover{
+        background-color: rgba(0, 0, 0, .2);
+        backdrop-filter: blur(6px);
+        opacity: 1;
+    }
+    }
 </style>
