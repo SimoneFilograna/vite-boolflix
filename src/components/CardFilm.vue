@@ -1,5 +1,6 @@
 <script>
-    import CountryFlag from 'vue-country-flag-next'
+    import { computed } from 'vue';
+import CountryFlag from 'vue-country-flag-next'
     export default{
         props:{
             objfilm: {
@@ -9,6 +10,12 @@
         },
         components:{
             CountryFlag
+        },
+
+        computed: {
+            voteConvert(){
+                return Math.ceil(this.objfilm.vote_average / 2)
+            }
         }
     }
 </script>
@@ -20,7 +27,7 @@
             <h5 class="card-title">Title: {{objfilm.title}}</h5>
             <p class="card-text">Original title: {{objfilm.original_title}}</p>
             <country-flag :country='objfilm.original_language' size='normal' class="mt-auto"/>
-            <p class="card-text pt-2">Vote: {{objfilm.vote_average}}</p>
+            <p class="card-text pt-2">Vote: {{ voteConvert }}</p>
         </div>
     </div>
 </template>
