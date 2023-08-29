@@ -24,7 +24,7 @@
 <template>
     <div class="card h-100 position-relavite">
         <img :src="`https://image.tmdb.org/t/p/w342/${objfilm.poster_path}`" class="card-img-top" alt="">
-        <div class="card-body d-flex flex-column">
+        <div class="card-body d-flex flex-column p-lg-5">
             <h5 class="card-title">{{objfilm.title ?? objfilm.name }}</h5>
             <p class="card-text">Original Title: {{objfilm.original_title ?? objfilm.original_name}}</p>
             <div class="mt-auto d-flex align-items-center justify-content-center gap-2">
@@ -40,7 +40,6 @@
     .card-body{
         text-align: center;
         opacity: 0;
-        padding: 3.5rem;
         color: rgb(255, 255, 255);
         position: absolute;
         inset: 0;
