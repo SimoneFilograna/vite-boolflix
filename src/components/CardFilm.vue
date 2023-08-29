@@ -25,11 +25,11 @@
     <div class="card h-100 position-relavite">
         <img :src="`https://image.tmdb.org/t/p/w342/${objfilm.poster_path}`" class="card-img-top" alt="">
         <div class="card-body d-flex flex-column">
-            <h5 class="card-title">Title: {{objfilm.title ?? objfilm.name }}</h5>
+            <h5 class="card-title">{{objfilm.title ?? objfilm.name }}</h5>
             <p class="card-text">Original Title: {{objfilm.original_title ?? objfilm.original_name}}</p>
             <div class="mt-auto d-flex align-items-center justify-content-center gap-2">
                 <span>Language: </span>
-                <lang-flag :iso="objfilm.original_language"/>
+                <lang-flag :squared="false" :iso="objfilm.original_language"/>
             </div>
             <p class="card-text pt-2">Vote: {{ voteConvert }}</p>
         </div>
