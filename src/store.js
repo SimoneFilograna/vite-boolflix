@@ -4,11 +4,12 @@ import {reactive} from "vue";
 export const store = reactive({
     inputText: "",
     movResult: [],
+    tvResult: [],
 })
 
 
 export function searchMov(){
-    let url= "https://api.themoviedb.org/3/search/movie";
+    let url= "https://api.themoviedb.org/3/search/multi";
 
     axios.get(url, {
         params: {
@@ -18,5 +19,6 @@ export function searchMov(){
     }).then((response)=>{
         store.movResult = response.data.results
         console.log(store.movResult)
-    })
+    });
 }
+
