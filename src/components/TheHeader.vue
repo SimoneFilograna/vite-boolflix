@@ -30,6 +30,11 @@
 
 <style lang="scss" scoped>
     .input-group {
-        width: 20%;
+        width: 25%;
+
+        .form-control:focus{
+            border: transparent;
+            box-shadow: 0 0 0 0rem rgba(255, 255, 255, 0.301);
+        }
     }
 </style>
