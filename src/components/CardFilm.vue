@@ -22,7 +22,6 @@
         methods:{
             cardImg(){
                 if(this.objfilm.poster_path){
-                    console.log(this.objfilm.poster_path);
                     return "https://image.tmdb.org/t/p/w342/" + this.objfilm.poster_path
                 } else {
                     return "./public/placeholder-film.jpg"
