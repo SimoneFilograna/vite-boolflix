@@ -18,7 +18,8 @@
 </script>
 
 <template>
-    <div class="container pt-4">
+    <h2 class="text-white display-5">Film and Series</h2>
+    <div class="container pt-4">        
         <div class="row row-cols-5 g-3">
             <div class="col" v-for="singleCard in store.movResult">
                 <CardFilm :objfilm="singleCard"></CardFilm>
