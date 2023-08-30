@@ -50,7 +50,7 @@
             </div>   
             
             <div class="d-flex align-items-center gap-3 right-icon">
-                <span class="text-white fs-5">
+                <span class="text-white">
                     <a href="#">BAMBINI</a> 
                 </span>
 
