@@ -19,12 +19,22 @@
                 return Math.ceil(this.objfilm.vote_average / 2)
             }
         },
+        methods:{
+            cardImg(){
+                if(this.objfilm.poster_path){
+                    console.log(this.objfilm.poster_path);
+                    return "https://image.tmdb.org/t/p/w342/" + this.objfilm.poster_path
+                } else {
+                    return "./public/placeholder-film.jpg"
+                }
+            }
+        }
     }
 </script>
 
 <template>
     <div class="card h-100 position-relavite">
-        <img :src="`https://image.tmdb.org/t/p/w342/${objfilm.poster_path}`" class="card-img-top" alt="">
+        <img :src="cardImg()" class="card-img-top" alt="">
         <div class="card-body d-flex flex-column p-lg-5">
             <h5 class="card-title">{{objfilm.title ?? objfilm.name }}</h5>
             <p class="card-text">Original Title: {{objfilm.original_title ?? objfilm.original_name}}</p>
