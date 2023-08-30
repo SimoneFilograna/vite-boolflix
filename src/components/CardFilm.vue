@@ -1,5 +1,4 @@
-<script>
-    import { computed } from 'vue';     
+<script>    
     import LangFlag from "vue-lang-code-flags"
     
     export default{
