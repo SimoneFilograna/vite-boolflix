@@ -1,5 +1,6 @@
 <script>    
-    import LangFlag from "vue-lang-code-flags"
+    import LangFlag from "vue-lang-code-flags";
+    import StarRating from 'vue-star-rating';
     
     export default{
         props:{
@@ -10,6 +11,7 @@
         },
         components:{
             LangFlag,
+            StarRating,
         },
 
         computed: {
@@ -30,7 +32,15 @@
                 <span>Language: </span>
                 <lang-flag :squared="false" :iso="objfilm.original_language"/>
             </div>
-            <p class="card-text pt-2">Vote: {{ voteConvert }}</p>
+            <star-rating :rating="voteConvert"
+                         :star-size="20"
+                         :increment="0.5"
+                         active-color="#FFDD30"
+                         inactive-color="#FFFFFF"
+                         :border-width="3"
+                         class="text-center pt-2">
+            </star-rating>
+            <!-- <p class="card-text pt-2">Vote: {{ voteConvert }}</p> -->
         </div>
     </div>
 </template>
