@@ -70,9 +70,10 @@
 
     ul{
         li{
-            a{
+            list-style: none;
+            a {
                 text-decoration: none;
-            }
+            };            
         }
     }
     .input-group {
