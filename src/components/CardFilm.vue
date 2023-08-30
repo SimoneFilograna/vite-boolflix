@@ -38,7 +38,8 @@
                          active-color="#FFDD30"
                          inactive-color="#FFFFFF"
                          :border-width="3"
-                         class="text-center pt-2">
+                         :show-rating="false"
+                         class="text-center py-3 px-2">
             </star-rating>
             <!-- <p class="card-text pt-2">Vote: {{ voteConvert }}</p> -->
         </div>
