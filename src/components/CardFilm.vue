@@ -32,15 +32,17 @@
                 <span>Language: </span>
                 <lang-flag :squared="false" :iso="objfilm.original_language"/>
             </div>
-            <star-rating :rating="voteConvert"
-                         :star-size="20"
-                         :increment="0.5"
-                         active-color="#FFDD30"
-                         inactive-color="#FFFFFF"
-                         :border-width="3"
-                         :show-rating="false"
-                         class="text-center py-3 px-2">
-            </star-rating>
+            <div class="d-flex justify-content-center pt-3">
+                <star-rating :rating="voteConvert"
+                             :star-size="18"
+                             :increment="0.5"
+                             active-color="#FFDD30"
+                             inactive-color="#FFFFFF"
+                             :border-width="1"
+                             :show-rating="false"
+                             :read-only="true">
+                </star-rating>
+            </div>
             <!-- <p class="card-text pt-2">Vote: {{ voteConvert }}</p> -->
         </div>
     </div>
