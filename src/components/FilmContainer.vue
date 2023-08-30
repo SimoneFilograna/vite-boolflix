@@ -18,7 +18,7 @@
 </script>
 
 <template>
-    <h2 class="text-white display-5">Film and Series</h2>
+    <h2 class="text-white display-5 mt-3">Film and Series</h2>
     <div class="container pt-4">        
         <div class="row row-cols-5 g-3">
             <div class="col" v-for="singleCard in store.movResult">

@@ -18,7 +18,7 @@
             voteConvert(){
                 return Math.ceil(this.objfilm.vote_average / 2)
             }
-        }
+        },
     }
 </script>
 
