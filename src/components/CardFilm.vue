@@ -64,6 +64,7 @@
         color: rgb(255, 255, 255);
         position: absolute;
         inset: 0;
+        transition: opacity .4s linear;
     &:hover{
         background-color: rgba(0, 0, 0, .2);
         backdrop-filter: blur(6px);
