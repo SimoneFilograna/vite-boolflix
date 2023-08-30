@@ -34,7 +34,7 @@
 <template>
     <div class="card h-100 position-relavite" :key="objfilm.id">
         <img :src="cardImg()" class="card-img-top" alt="">
-        <div class="card-body d-flex flex-column p-lg-5">
+        <div class="card-body d-flex flex-column p-lg-5 p-md-3 p-sm-0">
             <h5 class="card-title">{{objfilm.title ?? objfilm.name }}</h5>
             <p class="card-text">Original Title: {{objfilm.original_title ?? objfilm.original_name}}</p>
             <div class="mt-auto d-flex align-items-center justify-content-center gap-2">
