@@ -46,6 +46,6 @@
         background-color: rgba(0, 0, 0, .2);
         backdrop-filter: blur(6px);
         opacity: 1;
-    }
+        }
     }
 </style>
