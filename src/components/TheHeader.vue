@@ -15,13 +15,13 @@
 
 <template>
     <header>
-        <div class="container-fluid p-4 d-flex align-items-center gap-3">
+        <div class="container-fluid p-4 d-flex align-items-center gap-4">
             <div>
                 <img src="../assets/BOOFLIX-LOGO.png" alt="" class="">
             </div>           
 
             <div class="menu-list flex-grow-1">
-                <ul class="d-flex gap-4">
+                <ul class="d-flex gap-4 align-items-center">
                     <li>
                         <a href="#" class="text-white">Home</a>
                     </li>
@@ -49,7 +49,15 @@
                 <button class="btn btn-outline-light" type="submit" @click="searchMov()">Cerca</button>
             </div>   
             
-            <div>
+            <div class="d-flex align-items-center gap-3 right-icon">
+                <span class="text-white fs-5">
+                    <a href="#">BAMBINI</a> 
+                </span>
+
+                <a href="">
+                    <i class="fa-solid fa-bell text-white fs-4"></i>
+                </a>
+
                 <a href="#">
                     <img src="../assets/avatar.png" alt="" class="avatar-img">
                 </a>
@@ -76,7 +84,14 @@
         }
     }
 
-    .avatar-img{
-        width: 40px;
+    .right-icon{
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        .avatar-img{
+            width: 40px;
+        };
+
     }
 </style>
