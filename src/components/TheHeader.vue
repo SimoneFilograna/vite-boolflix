@@ -19,6 +19,10 @@
             <div class="flex-grow-1">
                 <img src="../assets/BOOFLIX-LOGO.png" alt="" class="">
             </div>
+
+            <div class="menu-list">
+                
+            </div>
             
             <div class="input-group">
                 <input class="p-2 form-control" type="search" placeholder="Search your film" v-model="store.inputText">
