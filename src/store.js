@@ -19,7 +19,7 @@ export function searchMov(){
     }).then((response)=>{
         store.movResult = response.data.results
         if(store.movResult.length === 0 ){
-            alert("Non esisa il film/serie che hai cercato")
+            alert("Non è stato trovato alcun Film/Serie con la parola ricercata")
             startFill()
         }
         console.log(store.movResult)
