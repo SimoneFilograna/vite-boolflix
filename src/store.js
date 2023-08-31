@@ -18,6 +18,10 @@ export function searchMov(){
         }
     }).then((response)=>{
         store.movResult = response.data.results
+        if(store.movResult.length === 0 ){
+            alert("Non esisa il film/serie che hai cercato")
+            startFill()
+        }
         console.log(store.movResult)
     });
 }

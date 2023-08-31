@@ -45,7 +45,7 @@
             </div>
 
             <div class="input-group">
-                <input class="p-2 form-control" type="search" placeholder="Search your film" v-model="store.inputText">
+                <input class="p-2 form-control" type="search" placeholder="Search your film" v-model="store.inputText" @keyup.enter="searchMov()" >
                 <button class="btn btn-outline-light" type="submit" @click="searchMov()">Cerca</button>
             </div>   
             
